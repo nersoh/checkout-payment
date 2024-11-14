@@ -3,7 +3,7 @@ import {
   type RenderToPipeableStreamOptions,
   renderToPipeableStream,
 } from 'react-dom/server'
-import App from './App'
+import App from './components/App.tsx'
 
 export function render(
   _url: string,
