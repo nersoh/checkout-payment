@@ -16,7 +16,7 @@
 
 .main {
   padding: 0 2em;
-  width: 100%;
+  /*width: 100%;*/
   text-align: left;
   @media (min-width: 36rem) {
     width: 70%;
@@ -24,7 +24,7 @@
 }
 
 .sidebar {
-  width: 100%;
+  display: flex;
   background-color: #f9f9f9;
   @media (min-width: 36rem) {
     width: 30%;
@@ -63,6 +63,7 @@
 }
 
 .summary__list {
+  width: 100%;
   padding: 0;
   list-style: none;
 }
@@ -87,4 +88,28 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.credit-card__iframe {
+  visibility: hidden;
+  width: 100%;
+  border: none;
+}
+
+.credit-card__iframe--loaded {
+  visibility: visible;
+  width: 100%;
+  border: none;
+}
+
+.credit-card__iframe-container {
+  position: relative;
+}
+
+.credit-card__skeleton {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5em;
+  background: #e2e2e2;
 }
