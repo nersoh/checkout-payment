@@ -30,7 +30,7 @@ export class CardVerificationCode extends HTMLElement {
                             </div>
                         </div>
                     </div>
-                    <div class="error" id="error">${t('SL0bskpsd2qSVQE1u+zP/A==', 'Required')}</div>
+                    <div class="error" id="error" data-testid="cvv-errorMessage"></div>
                 </div>
             </div>
         `;
