@@ -6,7 +6,7 @@ export const t = (key: string, defaultValue: string) : string => {
     const translationsAsText = document.getElementById('__TRANSLATIONS__')?.textContent
     window.__TRANSLATIONS__ = translationsAsText ? JSON.parse(translationsAsText) : undefined;
 
-    return window.__TRANSLATIONS__[key] ?? defaultValue;
+    return window.__TRANSLATIONS__?.[key] ?? defaultValue;
 }
 
 export const creditCardIconId: { [key: string]: string } = {

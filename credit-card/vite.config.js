@@ -4,4 +4,7 @@ import sri from './src/sri.js'
 
 export default defineConfig({
     plugins: [],
+    test: {
+        environment: "jsdom"
+    }
 });

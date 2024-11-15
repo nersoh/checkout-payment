@@ -106,6 +106,7 @@ export const fieldStyles = `
         .isValid .input-icon.success {
             position: static;
             visibility: visible;
+            text-transform: capitalize;
         }
         
         .error {

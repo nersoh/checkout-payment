@@ -21,15 +21,15 @@ export class CardName extends HTMLElement {
                 <div class="input-wrapper">
                     <input type="text" id="card-name" pattern="^[^;<!>\\d]+$" required>   
                     <div class="input-validation-icons">
-                        <div class="input-icon error">
+                        <div class="input-icon error" data-testid="holdername-errorIcon">
                             ${exclamationCircleIcon}
                         </div>
-                        <div class="input-icon success">
+                        <div class="input-icon success" data-testid="holdername-validIcon">
                             ${tickCircleIcon}
                         </div>
                     </div> 
                 </div>
-                <div class="error" id="error"></div>
+                <div class="error" id="error" data-testid="holdername-errorMessage"></div>
             </div>
         `;
     }
