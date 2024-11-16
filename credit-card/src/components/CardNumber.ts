@@ -34,7 +34,7 @@ export class CardNumber extends HTMLElement {
                         </div>
                     </div>
                 </div>
-                <div class="error" id="error">${t('field_required', 'Required')}</div>
+                <div class="error" id="error" data-testid="cardnumber-errorMessage"></div>
             </div>
         `;
     }
@@ -68,6 +68,7 @@ export class CardNumber extends HTMLElement {
 
             return;
         }
+        this.errorElement.innerHTML = '';
         this.fieldElement.classList.remove('hasError');
         this.fieldElement.classList.add('isValid');
     }
