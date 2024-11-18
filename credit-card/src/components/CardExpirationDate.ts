@@ -38,7 +38,7 @@ export class CardExpirationDate extends HTMLElement {
                         </div>
                     </div>
                 </div>
-                <div class="error" id="error">${t('field_required', 'Required')}</div>
+                <div class="error" id="error" data-testid="expirationdate-errorMessage"></div>
             </div>
         `;
     }
@@ -72,6 +72,7 @@ export class CardExpirationDate extends HTMLElement {
             return;
         }
 
+        this.errorElement.innerHTML = '';
         this.fieldElement.classList.remove('hasError');
         this.fieldElement.classList.add('isValid');
     }
