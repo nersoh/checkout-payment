@@ -1,0 +1,166 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --borders-corner-xs: 0.2rem;
+  --borders-corner-s: 0.4rem;
+  --borders-corner-m: 0.8rem;
+  --borders-corner-l: 1.6rem;
+  --borders-corner-rounded: 100rem;
+  --borders-border-s: 0.1rem;
+  --borders-border-m: 0.2rem;
+
+  --icons-small-width: 1.2rem;
+  --icons-small-height: 1.2rem;
+  --icons-medium-width: 2.4rem;
+  --icons-medium-height: 2.4rem;
+
+  --typography-body-font-family: "Helvetica Neue", Arial, sans-serif;
+  --typography-body-font-size: 1.6rem;
+  --typography-body-line-height: 1.375;
+  --typography-footnote-font-size: 1.4rem;
+  --typography-footnote-line-height:  1.285;
+  --typography-kicker-font-family: "Helvetica Neue", Arial, sans-serif;
+  --typography-kicker-font-size: 1.6rem;
+  --typography-kicker-line-height: 1.375;
+  --typography-kicker-text-transform: uppercase;
+
+  --colors-forms-primary-default-enabled-label: #222222;
+  --colors-forms-primary-default-enabled-surface: #ffffff;
+  --colors-forms-primary-default-disabled-surface: #F5F5F5;
+  --colors-forms-primary-default-disabled-label: #B6B6B6;
+  --colors-forms-primary-success-enabled-validation-icon: #048273;
+  --colors-forms-primary-error-enabled-validation-icon: #C41429;
+  --colors-forms-primary-error-enabled-stroke: #C41429;
+  --colors-forms-primary-default-enabled-stroke: #727272;
+
+  --spacers-4: 0.4rem;
+  --spacers-6: 0.6rem;
+  --spacers-8: 0.8rem;
+  --spacers-10: 1rem;
+  --spacers-12: 1.2rem;
+  --spacers-16: 1.6rem;
+  --spacers-24: 2.4rem;
+  --spacers-36: 3.6rem;
+  --spacers-48: 4.8rem;
+
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/*@font-face {*/
+/*  font-family: Nimbus Sans Extended D;*/
+/*  font-style: normal;*/
+/*  src:*/
+/*          url('https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusSansExtD-Bold.woff2')*/
+/*          format('woff2'),*/
+/*          url('https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusSansExtD-Bold.woff')*/
+/*          format('woff');*/
+/*  font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: Nimbus Roman D;*/
+/*  font-style: normal;*/
+/*  src:*/
+/*          url('https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusRomanD-Regular.woff2')*/
+/*          format('woff2'),*/
+/*          url('https://cdn-static.farfetch-contents.com/cdn-content/fonts/NimbusRomanD-Regular.woff')*/
+/*          format('woff');*/
+/*  font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: Farfetch Basis;*/
+/*  font-weight: 400;*/
+/*  font-style: normal;*/
+/*  src:*/
+/*          url('https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Regular.woff2')*/
+/*          format('woff2'),*/
+/*          url('https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Regular.woff')*/
+/*          format('woff');*/
+/*  font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: Farfetch Basis;*/
+/*  font-weight: 700;*/
+/*  font-style: normal;*/
+/*  src:*/
+/*          url('https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Bold.woff2')*/
+/*          format('woff2'),*/
+/*          url('https://cdn-static.farfetch-contents.com/cdn-content/fonts/FarfetchBasis-Bold.woff')*/
+/*          format('woff');*/
+/*  font-display: swap;*/
+/*}*/
+
+body {
+  overflow: hidden;
+}
+
+b {
+  font-weight: 700;
+}
+
+
+.payment-form {
+  width: 100%;
+  @media (min-width: 36rem) {
+    width: 66%;
+  }
+  @media (min-width: 60rem) {
+    width: 50%;
+  }
+}
+
+
+.form-fields {
+  display: grid;
+  grid-gap: var(--spacers-24);
+}
+
+.form-fields-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: var(--spacers-12);
+  grid-row-gap: var(--spacers-24);
+
+  @media (min-width: 36rem) {
+    grid-template-columns: 66% auto;
+  }
+}
+
+html  {
+  font-size: 62.5%;
+}
+
